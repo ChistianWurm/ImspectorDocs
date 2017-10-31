@@ -12,7 +12,6 @@ Contents:
    :maxdepth: 4
 
    intro
-   contribute
    quickstart
    tutorial
    installation
@@ -24,6 +23,7 @@ Contents:
    utilities
    howtos
    faq
+   contribute
    fileformat
    development
 
