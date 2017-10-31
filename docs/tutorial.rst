@@ -9,15 +9,64 @@ first time you use the program, it is a good idea to follow it step by step usin
 been provided to you with the program.
 
 
-Getting Started
-----------------
+Starting Imspector
+****************
+Imspector is started by executing the file Imspector.exe, using the shortcut being placed on the desktop of the measurement PC. (The default installation directory is C:\Imspector\.)
+During the startup procedure, the software modules will be loaded. 
 
-.. _ConfigDir:
-
-Configuration Dir
+Imspector Configurations
 -----------------
+Imspector allows to work with several configurations that may be saved for the individual users and/or usage scenarios. The configurations contain required hardware settings, display options, default measurements settings, etc. 
 
 .. todo:: Empty
+
+The configuration (sub-)folders can be found in the folder C:\Imspector\Config\. 
+If a single configuration is located in this folder, it will be automatically loaded. If more configurations e.g. for individual users are placed in that folder, the software will startup with a screen in which you can choose between the different user configurations (see Fig. above). The configuration which was used during the last measurement session will be highlighted. After choosing the desired configuration, Imspector proceeds to the main screen. 
+In addition to that, different Imspector versions may be installed at a single measurement PC.
+
+
+Imspector Measurements
+-----------------
+Imspector measurements may contain one or multiple windows. Each window is an individual dataset which might contain individual measurement data, instrument parameters, meta data and analyzed data. All windows within a measurement will be saved as a single file within a '.msr' file format. 
+The file format can be read by Imspector, Imspector Base, Python and Matlab with the necessary extension (see below). Further it can be exported into several common data formats (see below).
+In Imspector the instrument parameters for performing a measurement can be defined through several ways. They can be defined using the easyCommander, through a predefined measurement template, using existing measurements or by defining the settings fully individually on the base of a predefined standard measurement (which is recommended only for experts).
+
+
+The Smart Way to Start: easyCommander
+-----------------
+easyCommander is a novel and largely simplified way to define a measurement in Imspector (see Fig.). It is mainly designed to simplify the usage of Imspector in multi-user environments as core facilities. 
+
+.. todo:: Fig.: 'easyCommander' live dialog.
+
+Several standard usage scenarios are implemented in easyCommander. However, to maintain simplicity, advanced functions have to be defined using standard control elements as live dialogs described below.
+EasyCommander is intended as an extension to pre-existing usage concepts in Imspector. It is not a novel front end to Imspector, but it is one of several live dialogs. It enables users that are new to the instrument, or are using it only rarely, to operate the microscope.
+We expect that new users of the microscope will start using easyCommander and, after being more experienced, will proceed using templates or standard live dialogs to use the complete functionality and flexibility of the microscope. 
+
+.. todo:: Fig.: 'Dye selection' dialog.
+
+In easyCommander many measurement parameters as excitation lasers, detectors... will be chosen automatically. They are predefined and will be loaded upon selecting a dye in the 'Dye selection' dialog (see Fig.). The 'Dye Selection' dialog is an integral part of 'easyCommander'. It can be opened by clicking into the 'Dye' fields on the bottom left of Imspector.
+
+Workflow:
+1. Activate easyCommander.
+2. Open new measurement.
+3. Make settings compatible to easyCommander (To this end, press buttons on the bottom of the 'easyCommander' live dialog.)
+4. Select scan mode: XY, XZ, YZ, XYZ, XYT....
+5. Select range, pixel size... (see Table)
+6. Select scan mode: Confocal, STED, Confocal & STED
+7. Select dyes using the 'Dye Selection' dialog (see Fig.)
+8. Start the measurement by pressing 'REC'
+
+.. todo:: Table.: Recommended Scan Settings.
+
+Measurement Template
+------------
+In Imspector a template-driven workflow is implemented. 
+Measurement templates are ready-to-use parameter sets that enable a quick start into the use of Imspector and the microscope without the need for the user to be familiar with each and every detail of the microscope and the software. They contain the acquisition parameters (as field of view, pixel size, scan speed, scan direction, dimensionality, activated lasers, activated detectors....) that are required for a type of measurement. As in an Imspector measurement, multiple windows may be included. 
+To open a Template select 'File' → 'New' → 'File from Template'...
+
+During installation of the system a set of standard measurements schemes is pre-defined (see Fig.). Based on these templates users can start with several basic measurement. Later, the given templates can be either adapted for the users measurement of interest or new templates can be created by the user. 
+In contrast to easyCommander driven work-flows, measurement templates are not restricted to simplified measurement settings, but may contain most parameters that are available in Imspector at a given the setup. 
+
 
 Loading Data
 ------------
