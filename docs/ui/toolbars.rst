@@ -77,3 +77,24 @@ Zoom toolbar
    :align: center
 
    The 'Zoom' toolbar.
+   
+
+PowerSwitch and Microscope Status Toolbar
+---------------
+
+- The first button of the 'PowerSwitch and Microscope Status' toolbar (see Fig.) is the 'PowerSwitch' button. In microscopes where   'PowerSwitch' hardware is installed, it is used to switch the microscope hardware on and off. In microscopes where no 'PowerSwitch' hardware is installed, it is used to shut down the STED laser(s). 
+- The second button of the toolbar is the Microscope Status button. It displays the microscope status using different symbols:     everything is operating correctly/measurements can be done without limitations (see Fig.); some device shows a notification/measurements can be typically performed – please check status of devices (see Fig.); error status/measurements can not be performed – please check status of devices (see Fig.). Upon pressing the button, the 'Device Status' window will open, indicating the status of the individual devices (see Fig.)
+
+.. _fig_toolbar_PowerSwitch_and_Microscope_Status:
+.. figure:: 
+   :width: 8 cm
+   :align: center
+
+   The 'PowerSwitch and Microscope Status' toolbar.
+
+.. _fig_toolbar_Device_Status:
+.. figure:: 
+   :width: 8 cm
+   :align: center
+
+   The 'Device Status' window. Left, everything runs fine; Right, some devices are not initialized or show errors.
